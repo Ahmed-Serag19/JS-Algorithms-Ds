@@ -1,9 +1,13 @@
-<<<<<<< HEAD
-function countOccurrences() {}
+// function countOccurrences(word, letter) {
+//   let count = 0;
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i] === letter) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
 
+const countOccurrences = (word, letter) => word.split(letter).length - 1;
+console.log(countOccurrences("Hello World", "W"));
 module.exports = countOccurrences;
-=======
-function countOccurrences() {}
-
-module.exports = countOccurrences;
->>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933
