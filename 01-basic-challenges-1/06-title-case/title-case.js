@@ -1,9 +1,11 @@
-<<<<<<< HEAD
-function titleCase() {}
+function titleCase(sentence) {
+  let lowerCasing = sentence.toLowerCase().split(" ");
 
-module.exports = titleCase;
-=======
-function titleCase() {}
+  for (let i = 0; i < lowerCasing.length; i++) {
+    lowerCasing[i] = lowerCasing[i][0].toUpperCase() + lowerCasing[i].slice(1);
+  }
+  return lowerCasing.join(" ");
+}
 
+console.log(titleCase("Hello World iam a kanGaRoo"));
 module.exports = titleCase;
->>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933
