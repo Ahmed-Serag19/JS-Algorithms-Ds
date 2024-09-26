@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const mergeSort = require('./merge-sort');
 
 test('Sort an array in ascending order', () => {
@@ -26,3 +27,33 @@ test('Sort an empty array', () => {
   const emptyArray = [];
   expect(mergeSort(emptyArray)).toEqual(emptyArray);
 });
+=======
+const mergeSort = require('./merge-sort');
+
+test('Sort an array in ascending order', () => {
+  const unsortedArray = [5, 2, 8, 1, 3];
+  const sortedArray = [1, 2, 3, 5, 8];
+  expect(mergeSort(unsortedArray)).toEqual(sortedArray);
+});
+
+test('Sort an array with repeated values', () => {
+  const unsortedArray = [4, 1, 3, 4, 2, 2];
+  const sortedArray = [1, 2, 2, 3, 4, 4];
+  expect(mergeSort(unsortedArray)).toEqual(sortedArray);
+});
+
+test('Sort an already sorted array', () => {
+  const sortedArray = [1, 2, 3, 4, 5];
+  expect(mergeSort(sortedArray)).toEqual(sortedArray);
+});
+
+test('Sort an array with one element', () => {
+  const singleElementArray = [42];
+  expect(mergeSort(singleElementArray)).toEqual(singleElementArray);
+});
+
+test('Sort an empty array', () => {
+  const emptyArray = [];
+  expect(mergeSort(emptyArray)).toEqual(emptyArray);
+});
+>>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933

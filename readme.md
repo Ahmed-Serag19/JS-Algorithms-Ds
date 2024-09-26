@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Traversy JS Challenges: Data Structures & Algorithms
 
 This is the sandbox for my [70+ JS Challenges: Data Structures & Algorithms Course](https://www.traversymedia.com/javascript-challeges). Just about all of the concepts that are included, also exist in other languages. So, if you are not a JavaScript developer, you can still follow along and learn from this course/repo.
@@ -5,6 +6,13 @@ This is the sandbox for my [70+ JS Challenges: Data Structures & Algorithms Cour
 This course/repo goes over everything from basic loop challenges, high order array methods, recursion, time & space complexity, data structures such as stacks, queues, linked lists, trees, graphs, and we touch on sorting algorithms like bubble sort, insertion and merge sort. You should already know the basics of JavaScript before doing any of the challenges or taking the course.
 
 Please do not make any PRs to this repo as it goes along with a specific course. I may open another one for student solutions and new challenges.
+=======
+# Traversy JS Challenges, Data Structures, and Algorithms
+
+This is a sandbox for my upcoming `JavaScript challenges, data structures, and algorithms` course. Just about all of the concepts that are included, also exist in other languages. So, if you are not a JavaScript developer, you can still follow along and learn from this course/repo.
+
+This course/repo goes over everything from basic loop challenges, recursion, complexity, data structures, and algorithms. It is meant to be a complete course on the subject. It is not meant to be a course on JavaScript fundamentals. You should already know the basics of JavaScript.
+>>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933
 
 ## File Structure
 

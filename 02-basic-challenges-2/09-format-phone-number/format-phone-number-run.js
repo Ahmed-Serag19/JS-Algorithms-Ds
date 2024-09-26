@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 const formatPhoneNumber = require('./format-phone-number');
 
 const result = formatPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 
 console.log(result);
+=======
+const formatPhoneNumber = require('./format-phone-number');
+
+const result = formatPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
+
+console.log(result);
+>>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933

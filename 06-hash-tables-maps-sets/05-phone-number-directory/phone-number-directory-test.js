@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const phoneNumberDirectory = require('./phone-number-directory');
 
 test('Building a phone number directory from an array of phone numbers', () => {
@@ -13,3 +14,20 @@ test('Building a phone number directory from an array of phone numbers', () => {
   expect(result.get('Jane')).toBe('987-654-3210');
   expect(result.get('Joe')).toBe('555-555-5555');
 });
+=======
+const phoneNumberDirectory = require('./phone-number-directory');
+
+test('Building a phone number directory from an array of phone numbers', () => {
+  const phoneNumbers = [
+    'John:123-456-7890',
+    'Jane:987-654-3210',
+    'Joe:555-555-5555',
+  ];
+
+  const result = phoneNumberDirectory(phoneNumbers);
+
+  expect(result.get('John')).toBe('123-456-7890');
+  expect(result.get('Jane')).toBe('987-654-3210');
+  expect(result.get('Joe')).toBe('555-555-5555');
+});
+>>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933

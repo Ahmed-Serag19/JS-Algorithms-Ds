@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Queue {
   constructor() {
     this.queue = [];
@@ -39,3 +40,46 @@ class Queue {
 }
 
 module.exports = Queue;
+=======
+class Queue {
+  constructor() {
+    this.queue = [];
+    this.head = 0;
+    this.tail = 0;
+    this.maxSize = 100;
+  }
+
+  enqueue(element) {
+    if (this.isFull()) {
+      return false;
+    }
+    this.queue[this.tail] = element;
+    this.tail++;
+    return true;
+  }
+
+  dequeue() {
+    const item = this.queue[this.head];
+    this.head++;
+    return item;
+  }
+
+  peek() {
+    return this.queue[this.head];
+  }
+
+  getLength() {
+    return this.tail - this.head;
+  }
+
+  isEmpty() {
+    return this.getLength() === 0;
+  }
+
+  isFull() {
+    return this.getLength() === this.maxSize;
+  }
+}
+
+module.exports = Queue;
+>>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933
