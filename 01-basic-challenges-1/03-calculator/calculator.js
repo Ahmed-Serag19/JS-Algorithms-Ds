@@ -1,9 +1,18 @@
-<<<<<<< HEAD
-function calculator() {}
+function calculator(num1, num2, operation) {
+  let value;
 
+  if (operation === "+") {
+    value = num1 + num2;
+  } else if (operation === "-") {
+    value = num1 - num2;
+  } else if (operation === "*") {
+    value = num1 * num2;
+  } else if (operation === "/") {
+    value = num1 / num2;
+  } else {
+    return "Invalid operation";
+  }
+  return value;
+}
+console.log(calculator(5, 3, "-"));
 module.exports = calculator;
-=======
-function calculator() {}
-
-module.exports = calculator;
->>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933
