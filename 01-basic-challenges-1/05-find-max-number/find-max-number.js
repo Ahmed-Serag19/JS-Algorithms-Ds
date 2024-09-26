@@ -1,9 +1,12 @@
-<<<<<<< HEAD
-function findMaxNumber() {}
-
+function findMaxNumber(arr) {
+  let max = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] >= max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+const array = [1, 5, 3, 9, 2];
+console.log(findMaxNumber(array));
 module.exports = findMaxNumber;
-=======
-function findMaxNumber() {}
-
-module.exports = findMaxNumber;
->>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933
