@@ -1,9 +1,14 @@
-<<<<<<< HEAD
-function reverseString() {}
+// function reverseString(string) {
+//   return string.split("").reverse().join("");
+// }
 
+function reverseString(sentence) {
+  let reversed = "";
+  for (let i = sentence.length - 1; i >= 0; i--) {
+    console.log(i);
+    reversed += sentence[i];
+  }
+  return reversed;
+}
+console.log(reverseString("Hello World"));
 module.exports = reverseString;
-=======
-function reverseString() {}
-
-module.exports = reverseString;
->>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933

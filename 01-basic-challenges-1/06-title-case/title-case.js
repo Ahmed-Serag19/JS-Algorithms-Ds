@@ -7,5 +7,5 @@ function titleCase(sentence) {
   return lowerCasing.join(" ");
 }
 
-console.log(titleCase("Hello World iam a kanGaRoo"));
+// console.log(titleCase("Hello World iam a kanGaRoo"));
 module.exports = titleCase;
