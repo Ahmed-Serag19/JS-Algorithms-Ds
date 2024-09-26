@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 # Challenge: Validate Email
 
 ## Instructions
@@ -19,8 +20,8 @@ function validateEmail(email: string): boolean;
 ### Examples
 
 ```js
-validateEmail('john@gmail.com'); // true
-validateEmail('john@gmail'); // false
+validateEmail("john@gmail.com"); // true
+validateEmail("john@gmail"); // false
 ```
 
 ### Hints
@@ -37,7 +38,7 @@ Using a regular expression:
 ```js
 function validateEmail(email) {
   const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-  return emailRegex.test(email);
+  return emailRegex(email);
 }
 ```
 
@@ -62,17 +63,17 @@ Not using regular expression:
 
 ```js
 function validateEmail(email) {
-  if (email.indexOf('@') === -1) {
+  if (email.indexOf("@") === -1) {
     return false;
   }
 
-  const [localPart, domain] = email.split('@');
+  const [localPart, domain] = email.split("@");
 
   if (localPart.length === 0 || domain.length < 3) {
     return false;
   }
 
-  const domainExtension = domain.split('.');
+  const domainExtension = domain.split(".");
   if (
     domainExtension.length < 2 ||
     domainExtension[domainExtension.length - 1].length < 2
@@ -101,18 +102,20 @@ Finally, if none of the conditions are false, we return `true`.
 ### Test Cases
 
 ```js
-test('Valid Email Addresses', () => {
-  expect(validateEmail('john@example.com')).toBe(true);
-  expect(validateEmail('jane.doe@domain.org')).toBe(true);
+test("Valid Email Addresses", () => {
+  expect(validateEmail("john@example.com")).toBe(true);
+  expect(validateEmail("jane.doe@domain.org")).toBe(true);
 });
 
-test('Invalid Email Addresses', () => {
-  expect(validateEmail('invalid-email')).toBe(false);
-  expect(validateEmail('@domain.com')).toBe(false);
-  expect(validateEmail('user@domain')).toBe(false);
+test("Invalid Email Addresses", () => {
+  expect(validateEmail("invalid-email")).toBe(false);
+  expect(validateEmail("@domain.com")).toBe(false);
+  expect(validateEmail("user@domain")).toBe(false);
 });
 ```
+
 =======
+
 # Challenge: Validate Email
 
 ## Instructions
@@ -133,8 +136,8 @@ function validateEmail(email: string): boolean;
 ### Examples
 
 ```js
-validateEmail('john@gmail.com'); // true
-validateEmail('john@gmail'); // false
+validateEmail("john@gmail.com"); // true
+validateEmail("john@gmail"); // false
 ```
 
 ### Hints
@@ -176,17 +179,17 @@ Not using regular expression:
 
 ```js
 function validateEmail(email) {
-  if (email.indexOf('@') === -1) {
+  if (email.indexOf("@") === -1) {
     return false;
   }
 
-  const [localPart, domain] = email.split('@');
+  const [localPart, domain] = email.split("@");
 
   if (localPart.length === 0 || domain.length < 3) {
     return false;
   }
 
-  const domainExtension = domain.split('.');
+  const domainExtension = domain.split(".");
   if (
     domainExtension.length < 2 ||
     domainExtension[domainExtension.length - 1].length < 2
@@ -215,15 +218,16 @@ Finally, if none of the conditions are false, we return `true`.
 ### Test Cases
 
 ```js
-test('Valid Email Addresses', () => {
-  expect(validateEmail('john@example.com')).toBe(true);
-  expect(validateEmail('jane.doe@domain.org')).toBe(true);
+test("Valid Email Addresses", () => {
+  expect(validateEmail("john@example.com")).toBe(true);
+  expect(validateEmail("jane.doe@domain.org")).toBe(true);
 });
 
-test('Invalid Email Addresses', () => {
-  expect(validateEmail('invalid-email')).toBe(false);
-  expect(validateEmail('@domain.com')).toBe(false);
-  expect(validateEmail('user@domain')).toBe(false);
+test("Invalid Email Addresses", () => {
+  expect(validateEmail("invalid-email")).toBe(false);
+  expect(validateEmail("@domain.com")).toBe(false);
+  expect(validateEmail("user@domain")).toBe(false);
 });
 ```
->>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933
+
+> > > > > > > 928dda6703383db7c126a8e3479cdf2716e07933
