@@ -1,9 +1,11 @@
-<<<<<<< HEAD
-function removeDuplicates() {}
+function removeDuplicates(arr) {
+  let filteredArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!filteredArr.includes(arr[i])) {
+      filteredArr.push(arr[i]);
+    }
+  }
+  return filteredArr;
+}
 
 module.exports = removeDuplicates;
-=======
-function removeDuplicates() {}
-
-module.exports = removeDuplicates;
->>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933
