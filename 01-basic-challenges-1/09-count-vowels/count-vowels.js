@@ -1,9 +1,18 @@
-<<<<<<< HEAD
-function countVowels() {}
-
+function countVowels(sentence) {
+  let vowelsCount = 0;
+  lowerCasedSentence = sentence.toLowerCase().split("");
+  for (let i = 0; i < lowerCasedSentence.length; i++) {
+    if (
+      lowerCasedSentence[i] == "o" ||
+      lowerCasedSentence[i] == "e" ||
+      lowerCasedSentence[i] == "i" ||
+      lowerCasedSentence[i] == "u" ||
+      lowerCasedSentence[i] == "a"
+    ) {
+      vowelsCount++;
+    }
+  }
+  return vowelsCount;
+}
+console.log(countVowels("Hello World"));
 module.exports = countVowels;
-=======
-function countVowels() {}
-
-module.exports = countVowels;
->>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933
