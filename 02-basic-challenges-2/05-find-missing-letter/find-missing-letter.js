@@ -1,9 +1,13 @@
-<<<<<<< HEAD
-function findMissingLetter() {}
+function findMissingLetter(arr) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const startIndex = alphabet.indexOf(arr[0]);
 
-module.exports = findMissingLetter;
-=======
-function findMissingLetter() {}
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== alphabet[startIndex + i]) {
+      return alphabet[startIndex + i];
+    }
+  }
 
+  return "";
+}
 module.exports = findMissingLetter;
->>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933
