@@ -1,9 +1,13 @@
-<<<<<<< HEAD
-function areAllCharactersUnique() {}
+function areAllCharactersUnique(word) {
+  const charSet = new Set();
+  for (let i = 0; i < word.length; i++) {
+    console.log(charSet);
+    if (charSet.has(word[i])) {
+      return false;
+    }
+    charSet.add(word[i]);
+  }
+  return true;
+}
 
 module.exports = areAllCharactersUnique;
-=======
-function areAllCharactersUnique() {}
-
-module.exports = areAllCharactersUnique;
->>>>>>> 928dda6703383db7c126a8e3479cdf2716e07933
